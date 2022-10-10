@@ -15,10 +15,11 @@ class AtomicKatexPreview extends StatelessWidget {
   Widget build(BuildContext context) {
     return AtomicKatex(
       laTeXCode: Text(
-        laTex,
-        style: TextStyle(fontSize: 20),
+        laTex
+            .replaceAll("\\(", "\$")
+            .replaceAll("\\)", "\$")
+            .replaceAll("<br>", "\n"),
       ),
-      textStyle: TextStyle(fontSize: 22),
     );
   }
 }

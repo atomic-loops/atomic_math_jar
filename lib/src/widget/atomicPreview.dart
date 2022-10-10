@@ -15,7 +15,10 @@ class AtomicPreview extends StatelessWidget {
   Widget build(BuildContext context) {
     return AtomicMathJax(
       laTeXCode: Text(
-        laTex,
+        laTex
+            .replaceAll("\\(", "\$")
+            .replaceAll("\\)", "\$")
+            .replaceAll("<br>", "\n"),
         style: TextStyle(fontSize: 20),
       ),
       textStyle: TextStyle(fontSize: 22),
