@@ -94,6 +94,7 @@ class ListDView extends StatefulWidget {
 }
 
 class _ListDViewState extends State<ListDView> {
+  bool isKatex = false;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -105,8 +106,19 @@ class _ListDViewState extends State<ListDView> {
               child: Column(
                 children: [
                   ListTile(
-                    title: Text({index + 1}.toString()),
-                    subtitle: AtomicKatexPreview(laTex: answer[index]),
+                    title: Text("Question ${index + 1}"),
+                    subtitle: isKatex
+                        ? AtomicKatexPreview(laTex: question[index])
+                        : AtomicPreview(laTex: question[index]),
+                  ),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  ListTile(
+                    title: Text("Answer ${index + 1}"),
+                    subtitle: isKatex
+                        ? AtomicKatexPreview(laTex: answer[index])
+                        : AtomicPreview(laTex: answer[index]),
                   ),
                   Container(
                     height: 1,
@@ -116,6 +128,14 @@ class _ListDViewState extends State<ListDView> {
               ),
             );
           })),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          setState(() {
+            isKatex = !isKatex;
+          });
+        },
+        child: Text("Katex $isKatex"),
+      ),
     );
   }
 }

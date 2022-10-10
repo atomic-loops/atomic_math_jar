@@ -13,6 +13,8 @@ List question = [
   r"""ให้ \(\mathrm{x}, \mathrm{y}, \mathrm{z}\) เป็นคำตอบของระบบสมการ 
 <br>$\begin{array}{l}(\mathrm{x}+\mathrm{y})(\mathrm{x}+\mathrm{y}+\mathrm{z})=18\\ (\mathrm{y}+\mathrm{z})(\mathrm{x}+\mathrm{y}+\mathrm{z})=30\\ (\mathrm{z}+\mathrm{x})(\mathrm{x}+\mathrm{y}+\mathrm{z})=2\end{array} $
 <br>\(\mathrm{x}+\mathrm{y}+\mathrm{z}\)มีค่าเท่ากับข้อใด""",
+  r"""จากรูป \(\mathrm{ABCD}\) เป็นสี่เหลี่ยมจัตุรัสมี \(\mathrm{BE} \perp \mathrm{AC}, \mathrm{EF} \perp \mathrm{BC}\) และ \(\mathrm{FG} \perp \mathrm{AC}\) 
+<br>ถ้าสามเหลี่ยม \(C F G\) มีพื้นที่ \(256\) ตารางหน่วยแล้ว ข้อใดคือความยาวของ \(\mathrm{AB}\)"""
 ];
 
 List answer = [
