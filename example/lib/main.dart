@@ -26,18 +26,18 @@ class MyApp extends StatelessWidget {
           // is not restarted.
           primarySwatch: Colors.blue,
         ),
-        home: const Example());
+        home: const atomiclatex());
   }
 }
 
-class Example extends StatefulWidget {
-  const Example({super.key});
+class atomiclatex extends StatefulWidget {
+  const atomiclatex({super.key});
 
   @override
-  State<Example> createState() => _ExampleState();
+  State<atomiclatex> createState() => _atomiclatexState();
 }
 
-class _ExampleState extends State<Example> {
+class _atomiclatexState extends State<atomiclatex> {
   final changeValue = ChangeValue();
 
   @override
@@ -83,7 +83,7 @@ class _ExampleState extends State<Example> {
             const SizedBox(
               height: 20,
             ),
-            AtomicPreview(
+            AtomicKatexPreview(
               laTex: changeValue.controller.text,
             )
           ],
