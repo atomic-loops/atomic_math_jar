@@ -1,4 +1,5 @@
 import 'package:atomic_latex/atomic_latex.dart';
+import 'package:example/list.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -26,18 +27,18 @@ class MyApp extends StatelessWidget {
           // is not restarted.
           primarySwatch: Colors.blue,
         ),
-        home: const atomiclatex());
+        home: const ListDView());
   }
 }
 
-class atomiclatex extends StatefulWidget {
-  const atomiclatex({super.key});
+class Example extends StatefulWidget {
+  const Example({super.key});
 
   @override
-  State<atomiclatex> createState() => _atomiclatexState();
+  State<Example> createState() => _ExampleState();
 }
 
-class _atomiclatexState extends State<atomiclatex> {
+class _ExampleState extends State<Example> {
   final changeValue = ChangeValue();
 
   @override

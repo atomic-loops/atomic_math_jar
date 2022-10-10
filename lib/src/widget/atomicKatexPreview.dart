@@ -19,6 +19,7 @@ class AtomicKatexPreview extends StatelessWidget {
             .replaceAll("\\(", "\$")
             .replaceAll("\\)", "\$")
             .replaceAll("<br>", "\n"),
+        style: TextStyle(fontSize: 15),
       ),
     );
   }

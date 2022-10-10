@@ -64,6 +64,7 @@ class _AtomicKatexState extends State<AtomicKatex> {
             alignment: PlaceholderAlignment.middle,
             child: TexImage(
               laTeXMatch.group(3)!.trim(),
+              fontSize: 15,
             )));
       } else {
         textBlocks.addAll([
@@ -73,7 +74,10 @@ class _AtomicKatexState extends State<AtomicKatex> {
               child: DefaultTextStyle.merge(
                 child: Padding(
                   padding: const EdgeInsets.all(1.0),
-                  child: TexImage(laTeXMatch.group(6)!.trim()),
+                  child: TexImage(
+                    laTeXMatch.group(6)!.trim(),
+                    fontSize: 15,
+                  ),
                 ),
               )),
           const TextSpan(text: '\n')

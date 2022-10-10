@@ -19,9 +19,9 @@ class AtomicPreview extends StatelessWidget {
             .replaceAll("\\(", "\$")
             .replaceAll("\\)", "\$")
             .replaceAll("<br>", "\n"),
-        style: TextStyle(fontSize: 20),
+        style: TextStyle(fontSize: 15),
       ),
-      textStyle: TextStyle(fontSize: 22),
+      textStyle: TextStyle(fontSize: 15),
     );
   }
 }
