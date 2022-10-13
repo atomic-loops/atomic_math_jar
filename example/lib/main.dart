@@ -84,7 +84,7 @@ class _ExampleState extends State<Example> {
             const SizedBox(
               height: 20,
             ),
-            AtomicKatexPreview(
+            AtomicPreview(
               laTex: changeValue.controller.text,
             )
           ],
